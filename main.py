@@ -1,6 +1,7 @@
 import flet as ft
 
 def main(page: ft.Page):
+    page.title = "To-Do App"
     def add_clicked(e):
         page.add(ft.Checkbox(label=new_task.value))
         new_task.value = ""
